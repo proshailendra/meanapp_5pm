@@ -1,6 +1,7 @@
 const express= require('express'),
 bodyParser= require('body-parser'),
 cors= require('cors'),
+path= require('path'),
 expressSession=require('express-session'),
 connection= require('./server/config/db'),
 webRoutes= require('./server/routes/webRoutes'),
