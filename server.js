@@ -21,7 +21,7 @@ app.use(expressSession({
     saveUninitialized: true,
     resave: true
 }));
-
+app.use(express.static(path.join(__dirname, './client')));
 //routes
 app.use('/api',apiRoutes);
 app.use('/',webRoutes);
